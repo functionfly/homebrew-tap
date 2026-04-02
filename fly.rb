@@ -5,21 +5,21 @@
 class Fly < Formula
   desc "FunctionFly CLI — Go from idea to global API in under 60 seconds"
   homepage "https://functionfly.com"
-  version "1.1.0"
+  version "1.2.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/fly_1.1.0_darwin_amd64.tar.gz"
-      sha256 "37c76b18df26d462209f5cf7bd2f9b309b6518fd90e6f3dc85617cd870e1e7b2"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.3/fly_1.2.3_darwin_amd64.tar.gz"
+      sha256 "763a3cfaa80dcfef98ea5bb1c1741afac2d8f75885b970ee86d433c8026c7f40"
 
       define_method(:install) do
         bin.install "fly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/fly_1.1.0_darwin_arm64.tar.gz"
-      sha256 "3e3d32a3526b14bcd928daf049255ff02fac0304cfa3d60aa0450530af39c060"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.3/fly_1.2.3_darwin_arm64.tar.gz"
+      sha256 "1555c144c022a459c8951b220858e1fc93e38ec15242ecc165e1af9c35d8ecaa"
 
       define_method(:install) do
         bin.install "fly"
@@ -29,15 +29,15 @@ class Fly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/fly_1.1.0_linux_amd64.tar.gz"
-      sha256 "6204641a94e9dd6579f0916f9c13f037d555f5247323edda34e7ccad6c307ece"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.3/fly_1.2.3_linux_amd64.tar.gz"
+      sha256 "482c3483b7d0c76564342a0a665a6f50c3393bf7c928ee97f156bf4d86d318a9"
       define_method(:install) do
         bin.install "fly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/fly_1.1.0_linux_arm64.tar.gz"
-      sha256 "e33edd0e6bcf8e7b266d82a88a210e919665fadcae6470cf173922560b790bec"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.3/fly_1.2.3_linux_arm64.tar.gz"
+      sha256 "2b02dce8b6d087bbd7ceb4c6f99fc0791cd02d58b7c7eeabb3069338da5394af"
       define_method(:install) do
         bin.install "fly"
       end
