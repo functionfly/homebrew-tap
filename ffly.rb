@@ -5,21 +5,21 @@
 class Ffly < Formula
   desc "FunctionFly CLI — Go from idea to global API in under 60 seconds"
   homepage "https://functionfly.com"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/ffly_1.1.0_darwin_amd64.tar.gz"
-      sha256 "4c7b721febd0ee7f190bc683ccebb5e6c66d12ea115c9824b1228d6b0caee15b"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.0/ffly_1.2.0_darwin_amd64.tar.gz"
+      sha256 "d210e46734140136f1cda66d727fae9fdedcab1b85a1c4772b01578413f48ff0"
 
       define_method(:install) do
         bin.install "ffly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/ffly_1.1.0_darwin_arm64.tar.gz"
-      sha256 "0a856f7356dad68f427ae369559b3063763b1cede5ea5416465104d4aa0cac25"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.0/ffly_1.2.0_darwin_arm64.tar.gz"
+      sha256 "576918025bd7b819e899ab4f2d5b9f8be2cbaaaa33c1fc7e90a1ad5490541b23"
 
       define_method(:install) do
         bin.install "ffly"
@@ -29,15 +29,15 @@ class Ffly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/ffly_1.1.0_linux_amd64.tar.gz"
-      sha256 "79fbd8af6872acabc59ffbf298e833d8c0ab1831592d592d4f0a5e2b32858750"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.0/ffly_1.2.0_linux_amd64.tar.gz"
+      sha256 "1a56a4da5b854c9cc935c2e5714a1b690f6e8c2fc253e4c378fdc08ce40fef44"
       define_method(:install) do
         bin.install "ffly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/fly/releases/download/v1.1.0/ffly_1.1.0_linux_arm64.tar.gz"
-      sha256 "3ce80fe039d5611e5ca3bcf9f7bfa23f8f22e7adf079402f1aa75a85f12a7d66"
+      url "https://github.com/functionfly/fly/releases/download/v1.2.0/ffly_1.2.0_linux_arm64.tar.gz"
+      sha256 "7f8d6a08b89217de43d844f825b615ebf969d4fcfff1f1107459bff25d91cb54"
       define_method(:install) do
         bin.install "ffly"
       end
