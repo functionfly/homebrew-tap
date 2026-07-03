@@ -5,21 +5,21 @@
 class Ff < Formula
   desc "FunctionFly CLI — Go from idea to global API in under 60 seconds"
   homepage "https://functionfly.com"
-  version "1.0.1"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/functionfly/ff-cli/releases/download/v1.0.1/ff_1.0.1_darwin_amd64.tar.gz"
-      sha256 "873483e5ea3b2ea523e43c7a77d796f8645eef26f3b632d37c524a06449ad055"
+      url "https://github.com/functionfly/ff-cli/releases/download/v1.1.0/ff_1.1.0_darwin_amd64.tar.gz"
+      sha256 "68f85cb4d2c9f3dbf8ce345b458a87d2081e516087bc8607e771c8add498e99e"
 
       define_method(:install) do
         bin.install "ff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/functionfly/ff-cli/releases/download/v1.0.1/ff_1.0.1_darwin_arm64.tar.gz"
-      sha256 "b1dbb6b17fe70454ec1567d72c91cc7a379ff0b7bc2361fa603de1cacef1ffa0"
+      url "https://github.com/functionfly/ff-cli/releases/download/v1.1.0/ff_1.1.0_darwin_arm64.tar.gz"
+      sha256 "ce832c291a7526ea346f8abc02528e68345382a1b50ba1668e2f15a2a6456d04"
 
       define_method(:install) do
         bin.install "ff"
@@ -29,15 +29,15 @@ class Ff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/ff-cli/releases/download/v1.0.1/ff_1.0.1_linux_amd64.tar.gz"
-      sha256 "29517ed6beadd90ded278dffc1be28d66760cecd3087f6cec40d5dc7b90f7a4d"
+      url "https://github.com/functionfly/ff-cli/releases/download/v1.1.0/ff_1.1.0_linux_amd64.tar.gz"
+      sha256 "6bf5de411e882042447fde87fdbaf36bd114c1c338ec533fb59fd05522eeb0bc"
       define_method(:install) do
         bin.install "ff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/functionfly/ff-cli/releases/download/v1.0.1/ff_1.0.1_linux_arm64.tar.gz"
-      sha256 "a3e9d7d6edd2c1db178fb29c5a5163640a5c5c7b0f86c552548bd2a120b1b6be"
+      url "https://github.com/functionfly/ff-cli/releases/download/v1.1.0/ff_1.1.0_linux_arm64.tar.gz"
+      sha256 "b149e43b68c4325ca05c6f1b3fca1ebaecf73fb04f64f38eeba6152ef71f2fef"
       define_method(:install) do
         bin.install "ff"
       end
